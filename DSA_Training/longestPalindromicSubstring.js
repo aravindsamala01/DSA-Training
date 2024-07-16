@@ -1,8 +1,9 @@
+// Checking palindromic String
 function longestPalindromicSubstring(s) {
     if (!s) return "";
-
     let longest = "";
-
+    
+    // Checking expand Around center
     function expandAroundCenter(left, right) {
         while (left >= 0 && right < s.length && s[left] === s[right]) {
             left--;
@@ -27,7 +28,3 @@ function longestPalindromicSubstring(s) {
 
     return longest;
 }
-
-// Example usage:
-const S = "BABAD";
-console.log(longestPalindromicSubstring(S));  // Output: "BAB"
