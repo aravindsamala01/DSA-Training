@@ -1,4 +1,4 @@
-# Gas Station  -- Lang used  - PYTHON
+# Gas Station  -- Lang used  -- PYTHON
 
 def ComCircuit(gas, cost):
     total_tank = 0
@@ -18,7 +18,8 @@ def ComCircuit(gas, cost):
     
     return starting_station if total_tank >= 0 else -1
 
-# Example usage
+# Input of gas and cost.
+
 gas = [1, 2, 3, 4, 5]
 cost = [3, 4, 5, 1, 2]
-print(ComCircuit(gas, cost))  # Output: 3
+print(ComCircuit(gas, cost))  # --Output: 3
