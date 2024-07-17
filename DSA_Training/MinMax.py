@@ -1,3 +1,4 @@
+#This function finds min and max of the given array
 def find_min_max(nums, low, high):
     if low == high:
         return (nums[low], nums[high])
@@ -13,8 +14,9 @@ def find_min_max(nums, low, high):
     min2, max2 = find_min_max(nums, mid + 1, high)
     
     return (min(min1, min2), max(max1, max2))
-
+#User INPUT will be taken here
 nums = list(map(int, input("Enter the numbers separated by space: ").split()))
+#This is a function call
 min_element, max_element = find_min_max(nums, 0, len(nums) - 1)
 print(f"The minimum array element is {min_element}")
 print(f"The maximum array element is {max_element}")
