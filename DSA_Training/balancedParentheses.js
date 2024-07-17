@@ -1,6 +1,7 @@
 function isBalanced(expression) {
     const stack = []; // Stack to track opening parentheses
 
+    // Iterate through each character in the expression
     for (const char of expression) {
         if (char === '(') {
             stack.push(char); // Push opening parenthesis onto the stack
@@ -12,7 +13,8 @@ function isBalanced(expression) {
         }
     }
 
-    return stack.length === 0 ? "Balanced" : "Not Balanced"; // Check if stack is empty
+    // Check if stack is empty (all parentheses are matched)
+    return stack.length === 0 ? "Balanced" : "Not Balanced";
 }
 
 console.log(isBalanced("((()))()()"));  // Output: Balanced
