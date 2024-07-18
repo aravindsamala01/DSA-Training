@@ -12,13 +12,10 @@ public class DuplicateElements {
 		 for (int i = 0; i < len - 1; i++) { 
 			for (int j = i + 1; j < len; j++) { 
 				if (arr[i] == arr[j]) { 
-	// checking if element is 
-					// present in the ArrayList 
-					// or not if present then break 
+	// checking if element is present in the ArrayList or not if present then break 
 					if (al.contains(arr[i])) { 
 						break; 
 					} 
-
 					// if element is not present in the 
 					// ArrayList then add it to ArrayList 
 					// and make ifPresent at true 
@@ -29,16 +26,12 @@ public class DuplicateElements {
 				} 
 			} 
 		} 
-
-		// if duplicates is present 
-		// then print ArrayList 
+		// if duplicates is present then print ArrayList 
 		if (ifPresent == true) { 
-
 			System.out.print(al + " "); 
 		} 
 		else { 
-			System.out.print( 
-				"No duplicates present in arrays"); 
+			System.out.print("No duplicates present in arrays"); 
 		} 
 	}
 	// Driver Code 
