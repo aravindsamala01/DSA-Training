@@ -1,26 +1,18 @@
 import java.util.ArrayList; 
 
 public class DuplicateElements { 
-
-	// Function to find the Duplicates, 
-	// if duplicate occurs 2 times or 
-	// more than 2 times in 
-	// array so, it will print duplicate 
-	// value only once at output 
+	// Function to find the Duplicates,if duplicate occurs 2 times or  more than 2 times inarray so, it will print duplicate value only once at output 
 	static void findDuplicates( 
 	int arr[], int len) 
 	{ 
-
-		// initialize ifPresent as false 
+	// initialize ifPresent as false 
 		boolean ifPresent = false; 
-
-		// ArrayList to store the output 
+	// ArrayList to store the output 
 		ArrayList<Integer> al = new ArrayList<Integer>(); 
-
-		for (int i = 0; i < len - 1; i++) { 
+		 for (int i = 0; i < len - 1; i++) { 
 			for (int j = i + 1; j < len; j++) { 
 				if (arr[i] == arr[j]) { 
-					// checking if element is 
+	// checking if element is 
 					// present in the ArrayList 
 					// or not if present then break 
 					if (al.contains(arr[i])) { 
@@ -48,15 +40,12 @@ public class DuplicateElements {
 			System.out.print( 
 				"No duplicates present in arrays"); 
 		} 
-	} 
-
+	}
 	// Driver Code 
 	public static void main(String[] args) 
 	{ 
-
 		int arr[] = { 1,2,3,6,3,6,1}; 
 		int n = arr.length; 
-
 		findDuplicates(arr, n); 
 	} 
 }
