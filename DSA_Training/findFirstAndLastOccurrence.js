@@ -1,4 +1,3 @@
-//Finds the first and last occurrence of a given target number in a sorted array.
 function findFirstAndLast(nums, target) {
     const result = { first: -1, last: -1 };
 
@@ -40,11 +39,9 @@ function findFirstAndLast(nums, target) {
     }
 }
 
-// Example usage
-const nums = [2, 5, 5, 5, 6, 6, 8, 9, 9, 9];
-let target = 5;
-findFirstAndLast(nums, target); // Output: The first occurrence of element 5 is located at index 1
-                                //         The last occurrence of element 5 is located at index 3
+// User definable input
+const userNumsInput = prompt("Enter a sorted array of numbers separated by commas:");
+const nums = userNumsInput.split(',').map(Number);
+const target = Number(prompt("Enter the target number:"));
 
-target = 4;
-findFirstAndLast(nums, target); // Output: Element not found in the array
+findFirstAndLast(nums, target);
