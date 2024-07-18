@@ -13,5 +13,8 @@ function maxSubArray(nums) {
     // Return the maximum sum found.
     return maxSum;
 }
-const nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
-console.log(maxSubArray(nums)); // Output: 6 (Subarray is [4, -1, 2, 1])
+
+// User definable input
+const userInput = prompt("Enter an array of numbers separated by commas:");
+const nums = userInput.split(',').map(Number);
+console.log(maxSubArray(nums));
